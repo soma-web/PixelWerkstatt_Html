@@ -6,6 +6,7 @@
         <title>Meine erste Webiste</title>
 
         <style type = "text/css">
+        /* #region */
             table, td, th {
               border: 1px solid grey;
               border-collapse: collapse;
@@ -25,6 +26,21 @@
                 flex-grow: 1;
                 flex-shrink: 1;
                 flex-basis: 8%;
+            }
+        /* #endregion */
+
+            li{
+                font-size: 18px;
+            }
+
+            .green-text{
+                color: green;
+                font-style: italic;
+            }
+
+            #last-entry{
+                color: red;
+                font-weight: bold;
             }
 
             </style>
@@ -99,9 +115,21 @@
                     </tbody>
 
                 </table>
+                
+                <h2>HTML ist das Skellett, CSS hilft uns Elemete zu stylen</h2>         
+                <p>
+                    Elemente können auf verschiedene Arten gestyled werden
+                    <ul>
+                        <li style="color: blueviolet">direkt über das &lt;style&gt; Attribut</li>
+                        <li>über ihre eigenen elemente</li>
+                        <li class="green-text">über eine class</li>
+                        <li id="last-entry">über eine id</li>
+
+                    </ul>
+                </p>          
             </div> 
             <div class="flex-item">
-                <img src="img/first.PNG" height="800px">
+                <img src="img/third.jpg" height="800px">
             </div> 
         </div>
     </body>
