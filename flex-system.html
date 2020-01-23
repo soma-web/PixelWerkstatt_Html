@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meine erste Webiste</title>
+
+        <style type = "text/css">
+        /* #region flexsystem styles*/            
+            .flex-container {
+                display:flex;
+                flex-direction: row; /* Standardwert */
+                flex-wrap: wrap;
+            }
+            .flex-item {
+                flex-grow: 1;  /* darf sich ausdehnen (default: 1)*/
+                flex-shrink: 1; /*darf auch kleiner werden (default: 1) */
+                flex-basis: 40%;  /* ausgangsbreite */
+                margin-right: 5px;
+
+            }
+
+            .flex-item-small {                
+                flex-basis: 10%;
+                margin-right: 5px;
+            }
+        /* #endregion */
+            </style>
+      
+    </head>
+    <body style="background: #f1f1f1; margin: 0px;">
+        <div style="height: 80px; width:100%; background: green; padding: 10px;">
+            <head ><b>Das Grundgerüst einer Homepage</b></head>
+        </div>
+
+        <div class="flex-container">
+            
+            <div class="flex-item-small" style="background: red; padding-left: 3px">              
+            </div>
+            <div class="flex-item" style="background:purple;">                
+                  
+            </div> 
+            <div class="flex-item" style="background: black;">
+                    <p>skaldaslkdjsld</p>
+            </div> 
+        </div>
+
+        <div style="margin: 20px;">
+            <h2>FlexContainer</h2>
+            <p>
+                Flexcontainer helfen uns verschiedene Sachen anzuordnen.
+                Das Flex System besteht eigentlich immer aus 2 Sachen,
+                <ol>
+                    <li>Einem Übergeordneten Container der die Anordnung der Kinder vorgibt</li>
+                    <li>Die Kinder die sagen wieviel Platz sie brauchen</li>
+                </ol>
+            </p>
+            <p>
+                <img src="./img/flex-orientation.png">   
+            </p>
+        </div>
+    </body>
+</html>
