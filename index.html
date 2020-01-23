@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meine erste Webiste</title>
+
+        <style type = "text/css">
+            table, td, th {
+              border: 1px solid grey;
+              border-collapse: collapse;
+            } 
+            
+            .flex-container {
+                display:flex;
+                flex-direction: row; /* Standardwert */
+            }
+            .flex-item {
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: 50%;
+            }
+
+            </style>
+      
+    </head>
+    <body style="background: #f1f1f1;">
+        <head ><b><font size="16">Das Grundgerüst einer Homepage</font></b></head>
+        <br>
+        <br>
+        <br>
+        <div class="flex-container">
+            <div class="flex-item">
+                <table border-color:grey>
+                    <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Funktion</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>&lt;html&gt;</td>
+                            <td>Zeigt dem Interpreter den Start der Html Seite an</td>
+                        </tr>                    
+                        <tr>
+                            <td>&lt;head&gt;</td>
+                            <td>Meta informationen die dem Interpreter helfen</td>
+                        </tr>    
+                        <tr>
+                            <td>&lt;meta&gt;</td>
+                            <td>Eine Information die dem Interpreter sagen was zu erwarten ist (z.b. charset=utf-8)</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;style&gt;</td>
+                            <td>CSS Styles werden hier angegeben</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;body&gt;</td>
+                            <td>Ab hier beginnt die Homepage</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;head&gt;</td>
+                            <td>Die Überschrift der Seite</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;br&gt;</td>
+                            <td>Einfach eine leere Zeile</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;table&gt;</td>
+                            <td>Der Anfang der Tabelle</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;thead&gt;</td>
+                            <td>Die erste Zeile/Überschrift der Zellen</td>
+                        </tr> 
+                        <tr>
+                            <td>&lt;tr&gt;</td>
+                            <td>Eine Tabellenzeile (Tablerow)</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;th&gt;</td>
+                            <td>Eine TabellenÜberschrift (Tableheader) zelle</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div> 
+            <div class="flex-item">
+                <img src="img/first.PNG" height="800px">
+            </div> 
+        </div>
+    </body>
+</html>
