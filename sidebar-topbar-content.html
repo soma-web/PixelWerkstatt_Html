@@ -10,6 +10,7 @@
             :root{
                 --main-green: #7acc8f;
                 --highlight-green: #3d6647;
+                --background: #f1f1f1;
             }
 
             .header{
@@ -42,6 +43,7 @@
                 margin-top: 5px;
                 flex-grow: 1;  /* darf sich ausdehnen (default: 1)*/
                 flex-shrink: 1; /*darf auch kleiner werden (default: 1) */
+                background: var(--background);
             }
 
             html, body{
@@ -61,7 +63,7 @@
             
             <div class="flex-item-sidebar" style="background: var(--main-green); padding-left: 3px">              
             </div>
-            <div class="flex-item-content" style="background:purple;">                
+            <div class="flex-item-content" >                
                   
             </div>             
         </div>

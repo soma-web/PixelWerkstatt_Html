@@ -10,6 +10,7 @@
             :root{
                 --main-green: #7acc8f;
                 --highlight-green: #3d6647;
+                --background: #f1f1f1;
             }
 
             .header{
@@ -42,6 +43,21 @@
                 margin-top: 5px;
                 flex-grow: 1;  /* darf sich ausdehnen (default: 1)*/
                 flex-shrink: 1; /*darf auch kleiner werden (default: 1) */
+                background: var(--background);
+            }
+
+            .navigation-element{
+                min-height: 40px;
+                border-top: 1px solid grey;
+                display: table;
+                width: 100%;
+            }
+
+            .navigation-element a {
+                width: 100%;
+                display: table-cell;
+                vertical-align:middle;
+                margin-left: 10px;
             }
 
             html, body{
@@ -57,11 +73,16 @@
             <head ><b>Das Grundgerüst einer Homepage</b></head>
         </div>
 
-        <div class="flex-container">
-            
-            <div class="flex-item-sidebar" style="background: var(--main-green); padding-left: 3px">              
+        <div class="flex-container">            
+            <div class="flex-item-sidebar" style="background: var(--main-green); padding-left: 3px">        
+                <div class="navigation-element">
+                    <a href="https://google.de">Meine Suchmaschine</a>
+                </div> 
+                <div class="navigation-element">
+                    <a href="https://google.de">Meine Playlist</a>
+                </div>         
             </div>
-            <div class="flex-item-content" style="background:purple;">                
+            <div class="flex-item-content" >                
                   
             </div>             
         </div>
