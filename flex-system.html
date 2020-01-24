@@ -6,6 +6,11 @@
         <title>Meine erste Webiste</title>
 
         <style type = "text/css">
+
+        :root{
+            --main-green: #7acc8f;
+            --highlight-green: #3d6647;
+        }
         /* #region flexsystem styles*/            
             .flex-container {
                 display:flex;
@@ -29,13 +34,13 @@
       
     </head>
     <body style="background: #f1f1f1; margin: 0px;">
-        <div style="height: 80px; width:100%; background: green; padding: 10px;">
+        <div style="height: 80px; width:100%; background: var(--main-green); padding: 10px;">
             <head ><b>Das Grundgerüst einer Homepage</b></head>
         </div>
 
         <div class="flex-container">
             
-            <div class="flex-item-small" style="background: red; padding-left: 3px">              
+            <div class="flex-item-small" style="background: var(--main-green); padding-left: 3px">              
             </div>
             <div class="flex-item" style="background:purple;">                
                   

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meine erste Webiste</title>
+
+        <style type = "text/css">
+
+            :root{
+                --main-green: #7acc8f;
+                --highlight-green: #3d6647;
+            }
+
+            .header{
+                height: 10%; 
+                width:100%; 
+                background: var(--main-green); 
+                padding: 10px;
+            }
+        /* #region flexsystem styles*/            
+            .flex-container {
+                display:flex;
+                flex-direction: row; /* Standardwert */
+                flex-wrap: wrap;
+                height: 90%;
+            }
+            .flex-item {
+                flex-grow: 1;  /* darf sich ausdehnen (default: 1)*/
+                flex-shrink: 1; /*darf auch kleiner werden (default: 1) */
+                flex-basis: 40%;  /* ausgangsbreite */
+                margin-right: 5px;
+            }
+
+            .flex-item-sidebar {                
+                flex-basis: 10%;
+                margin-right: 5px;
+            }
+
+            .flex-item-content{
+                margin-left: 5px;
+                margin-top: 5px;
+                flex-grow: 1;  /* darf sich ausdehnen (default: 1)*/
+                flex-shrink: 1; /*darf auch kleiner werden (default: 1) */
+            }
+
+            html, body{
+                height: 100%;
+                width: 100%;
+            }
+        /* #endregion */
+            </style>
+      
+    </head>
+    <body style="background: #f1f1f1; margin: 0px;">
+        <div class="header">
+            <head ><b>Das Grundgerüst einer Homepage</b></head>
+        </div>
+
+        <div class="flex-container">
+            
+            <div class="flex-item-sidebar" style="background: var(--main-green); padding-left: 3px">              
+            </div>
+            <div class="flex-item-content" style="background:purple;">                
+                  
+            </div>             
+        </div>
+
+      
+    </body>
+</html>
