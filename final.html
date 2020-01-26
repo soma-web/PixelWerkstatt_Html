@@ -15,10 +15,9 @@
             }
 
             .header{
-                height: 0%; 
+                height: 10px; 
                 width:100%; 
-                background: var(--main-green); 
-                padding: 10px;
+                background: var(--main-green);                 
             }
         /* #region flexsystem styles*/            
             .flex-container {
@@ -26,18 +25,14 @@
                 flex-direction: row; /* Standardwert */
                 flex-wrap: nowrap;
                 height: 100%;
-               
-            }
-            .flex-item {
-                flex-grow: 1;  /* darf sich ausdehnen (default: 1)*/
-                flex-shrink: 1; /*darf auch kleiner werden (default: 1) */
-                flex-basis: 40%;  /* ausgangsbreite */
-                margin-right: 5px;
-            }
+                width: 100%;               
+            }  
 
             .flex-item-sidebar {                
                 flex-basis: 10%;   
                 background: var(--main-green);
+                height: 100%;
+                overflow:hidden;
             }
 
             .flex-item-content{
@@ -46,6 +41,7 @@
                 background: var(--background);
                 box-shadow: inset 3px 3px 5px grey;
                 padding: 20px;
+                overflow: auto;
             }
 
             .navigation-element{
@@ -75,6 +71,7 @@
                 height: 100%;
                 width: 100%;
                 font-family: 'Montserrat', sans-serif;
+                overflow: hidden;
             }
         /* #endregion */
             </style>
