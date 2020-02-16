@@ -5,17 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pixelwerkstatt</title>
     <style type = "text/css">
+      body{
+        height: 100%;  /* der body nimmt 100% der Höhe ein */
+        width: 100%;   /* der body nimmt 100% der Breite ein */
+        margin: 0px;   /* keine Abstände zu den Breiten */
+      }
+
       .header{
-        background: red;
+        background: red;  /* Hintergrundfarbe  (red,green oder auch #556677) */
+        height: 50px;       
+        color: #ffffff;   /* Textfarbe  */
       }
 
       .navigation{
         background: green;
+        float: left;        /* der Container soll sich links orientieren */ 
+        width: 10%;
+        height: 100%;
       }
 
       .content{
-        background: #f1f1f1
+        background: #ff01c8; 
+        margin-left: 10%;    /* Abstand nach links soll 10% der breite betragen */
+        width: 90%;
+        height: 100%;
       }
+
+      .halfsite{
+        width: 50%;
+        height: 100px;
+        overflow:hidden;
+      }
+
+      .left{
+        float: left;
+        overflow:hidden;
+        background: #ffffff55;
+      }
+
     </style>
   </head>
   <body>
@@ -26,6 +53,20 @@
       Navigation
     </div>
     <div class="content">
-      Inhalt
+   
+      <article class="halfsite left">
+          ertse Spalte <br>
+          in der etwas <bR>
+          passiert
+      </article>
+      <article class="halfsite">
+        zweite Spalte <br>
+        in der etwas <bR>
+        passiert
+      </article>
+     <article style="margin-top: 100px;">
+       Hier geht es weiter
+     </article>
+    
     </div>
   </body>
